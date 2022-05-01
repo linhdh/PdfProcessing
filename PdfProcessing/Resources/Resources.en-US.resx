@@ -1,0 +1,2239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ACTION" xml:space="preserve">
+    <value>Action</value>
+  </data>
+  <data name="ACTIVE" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="ADD" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="ADD_RULE" xml:space="preserve">
+    <value>Add Rule</value>
+  </data>
+  <data name="ADD_RULES" xml:space="preserve">
+    <value>Add Rules</value>
+  </data>
+  <data name="ALTERNATIVE_WRITING" xml:space="preserve">
+    <value>Alternative Writing</value>
+  </data>
+  <data name="AN_ERROR_OCCURRED_WHILE_PROCESSING_YOUR_REQUEST" xml:space="preserve">
+    <value>An error occurred while processing your request</value>
+  </data>
+  <data name="APPLOG" xml:space="preserve">
+    <value>applog</value>
+  </data>
+  <data name="ARE_YOU_SURE_DELETE_ITEM" xml:space="preserve">
+    <value>Do you want to delete?</value>
+  </data>
+  <data name="ARE_YOU_WANT_TO_DELETE" xml:space="preserve">
+    <value>Do you want to delete?</value>
+  </data>
+  <data name="ASSOCIATED_PATTERN" xml:space="preserve">
+    <value>Associated Regex</value>
+  </data>
+  <data name="ASSOCIATED_POSITION" xml:space="preserve">
+    <value>Associated Position</value>
+  </data>
+  <data name="ASSOCIATED_RELATED_REGION" xml:space="preserve">
+    <value>Associated Label</value>
+  </data>
+  <data name="BASE_CLASSIFICATION" xml:space="preserve">
+    <value>Base Classification</value>
+  </data>
+  <data name="BASE_CLASSIFICATION_TEMPLATE" xml:space="preserve">
+    <value>Base Classification Template</value>
+  </data>
+  <data name="BASE_DATA" xml:space="preserve">
+    <value>Base Data</value>
+  </data>
+  <data name="BASE_DICTIONARY" xml:space="preserve">
+    <value>Base Dictionary</value>
+  </data>
+  <data name="BASE_EXTRACTION" xml:space="preserve">
+    <value>Base Extraction</value>
+  </data>
+  <data name="BASE_EXTRACTION_TEMPLATE" xml:space="preserve">
+    <value>Base Extraction Template</value>
+  </data>
+  <data name="BASE_EXTRACTION_TEMPLATE_NAME" xml:space="preserve">
+    <value>Base Extraction Template Name</value>
+  </data>
+  <data name="BOTTOM" xml:space="preserve">
+    <value>Bottom</value>
+  </data>
+  <data name="BY_LABEL" xml:space="preserve">
+    <value>By Label</value>
+  </data>
+  <data name="BY_POSITION" xml:space="preserve">
+    <value>By Position</value>
+  </data>
+  <data name="BY_REGION" xml:space="preserve">
+    <value>By Region</value>
+  </data>
+  <data name="CANCEL" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CAN_NOT_DELETE_DOC" xml:space="preserve">
+    <value>Can't Delete Document Not Yet Process</value>
+  </data>
+  <data name="CAN_NOT_DOWNLOAD_FILE_WITH_THIS_URL" xml:space="preserve">
+    <value>Can not Download File With This URL</value>
+  </data>
+  <data name="CAN_NOT_SELECT_AN_EXTRACTION_TEMPLATE_TO_PROCESS" xml:space="preserve">
+    <value>Can not select an extraction template to process</value>
+  </data>
+  <data name="CATEGORIES" xml:space="preserve">
+    <value>Categories</value>
+  </data>
+  <data name="CLASSIFICATION" xml:space="preserve">
+    <value>Classification</value>
+  </data>
+  <data name="CLASSIFICATION_RULE" xml:space="preserve">
+    <value>Classification Rule</value>
+  </data>
+  <data name="CLASSIFICATION_TEMPLATE" xml:space="preserve">
+    <value>Classification Template</value>
+  </data>
+  <data name="CLASSIFY" xml:space="preserve">
+    <value>Classification</value>
+  </data>
+  <data name="CLEAN_UP_RULE" xml:space="preserve">
+    <value>CleanUpRule</value>
+  </data>
+  <data name="CONFIGURATION" xml:space="preserve">
+    <value>Configuration</value>
+  </data>
+  <data name="CONFIRM" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="CONFIRM_UNSAVED_MESSAGE" xml:space="preserve">
+    <value>You have modified. | You can "Yes" to discard your changes or "No" to continue editing</value>
+  </data>
+  <data name="CONTAINS" xml:space="preserve">
+    <value>Contains</value>
+  </data>
+  <data name="CONTAINS_NOT" xml:space="preserve">
+    <value>Contains Not</value>
+  </data>
+  <data name="CONTENT" xml:space="preserve">
+    <value>Content</value>
+  </data>
+  <data name="CONTENT_BY_POSITION" xml:space="preserve">
+    <value>Content By Region</value>
+  </data>
+  <data name="CONTENT_CLA" xml:space="preserve">
+    <value>Content</value>
+  </data>
+  <data name="CONTENT_EX" xml:space="preserve">
+    <value>Content</value>
+  </data>
+  <data name="CONTENT_NONE" xml:space="preserve">
+    <value>Static Content</value>
+  </data>
+  <data name="CONTENT_QR_CODE" xml:space="preserve">
+    <value>Content QR-Code</value>
+  </data>
+  <data name="CONTENT_RELATIVE_WITH_LABEL" xml:space="preserve">
+    <value>Content By Position</value>
+  </data>
+  <data name="COPYRIGHT_2020_DIARTIS_AG" xml:space="preserve">
+    <value>Copyright © 2020 Diartis AG</value>
+  </data>
+  <data name="CREATE" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="CREATED_A_DIRECTORY_INSIDE_CATEGORIES" xml:space="preserve">
+    <value>Created a directory inside Categories</value>
+  </data>
+  <data name="CREATED_ON" xml:space="preserve">
+    <value>Created On</value>
+  </data>
+  <data name="CREATE_BASE_CLASSIFICATION_TEMPLATE" xml:space="preserve">
+    <value>Create Base Classification Template</value>
+  </data>
+  <data name="CREATE_BASE_EXTRACTION_TEMPLATE" xml:space="preserve">
+    <value>Create Base Extraction template</value>
+  </data>
+  <data name="CREATE_CLASSIFICATION_TEMPLATE" xml:space="preserve">
+    <value>Create Classification Template</value>
+  </data>
+  <data name="CREATE_DATA_MODEL" xml:space="preserve">
+    <value>Create Data Model</value>
+  </data>
+  <data name="CREATE_DATE" xml:space="preserve">
+    <value>Create Date</value>
+  </data>
+  <data name="CREATE_EXTRACTION_TEMPLATE" xml:space="preserve">
+    <value>Create Extraction Template</value>
+  </data>
+  <data name="CREATE_EX_TEMP" xml:space="preserve">
+    <value>Create Extraction Template</value>
+  </data>
+  <data name="CREATE_REGULAR_EXPRESSION" xml:space="preserve">
+    <value>Create Regular Expression</value>
+  </data>
+  <data name="CREATE_RULE" xml:space="preserve">
+    <value>Create Rule</value>
+  </data>
+  <data name="CREATE_SQL_QUERY" xml:space="preserve">
+    <value>Create SQL Query</value>
+  </data>
+  <data name="CREATE_TEMPLATE" xml:space="preserve">
+    <value>Create Template</value>
+  </data>
+  <data name="CROP_MODE" xml:space="preserve">
+    <value>Crop Mode</value>
+  </data>
+  <data name="CROP_MODE_OFF" xml:space="preserve">
+    <value>Crop Mode: OFF</value>
+  </data>
+  <data name="CROP_MODE_ON" xml:space="preserve">
+    <value>Crop Mode: ON</value>
+  </data>
+  <data name="CROP_REGION" xml:space="preserve">
+    <value>Crop Region</value>
+  </data>
+  <data name="DASHBOARD" xml:space="preserve">
+    <value>Dashboard</value>
+  </data>
+  <data name="DATA_LOADING_ERROR" xml:space="preserve">
+    <value>Data Loading Error</value>
+  </data>
+  <data name="DATA_MODEL" xml:space="preserve">
+    <value>Data Model</value>
+  </data>
+  <data name="DATA_MODEL_USING" xml:space="preserve">
+    <value>Data Model is using</value>
+  </data>
+  <data name="DATA_SOURCE_FILE" xml:space="preserve">
+    <value>Data Source File</value>
+  </data>
+  <data name="DATE" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="DATE_MODIFIED" xml:space="preserve">
+    <value>Date Modified</value>
+  </data>
+  <data name="DEFAULT_VALUE" xml:space="preserve">
+    <value>Default Value</value>
+  </data>
+  <data name="DELETE" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="DELETE_FAIL" xml:space="preserve">
+    <value>Delete Fail</value>
+  </data>
+  <data name="DELETE_FILE" xml:space="preserve">
+    <value>Delete File</value>
+  </data>
+  <data name="DELETE_FOLDER" xml:space="preserve">
+    <value>Delete folder</value>
+  </data>
+  <data name="DELETE_MULTIPLE_FILE" xml:space="preserve">
+    <value>Delete multiple files</value>
+  </data>
+  <data name="DELETE_SUCCESS" xml:space="preserve">
+    <value>Delete success</value>
+  </data>
+  <data name="DELIVERY" xml:space="preserve">
+    <value>Delivery</value>
+  </data>
+  <data name="DESCRIPTION" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="DETAILS_VIEW" xml:space="preserve">
+    <value>Details view</value>
+  </data>
+  <data name="DETAIL_ERROR" xml:space="preserve">
+    <value>Detail Error</value>
+  </data>
+  <data name="DETAIL_INFORMATION" xml:space="preserve">
+    <value>Detail Information</value>
+  </data>
+  <data name="DICTIONARY_BASE" xml:space="preserve">
+    <value>Dictionary Base</value>
+  </data>
+  <data name="DICTIONARY_CUSTOM" xml:space="preserve">
+    <value>Dictionary Custom</value>
+  </data>
+  <data name="DOCUMENTNAME" xml:space="preserve">
+    <value>DocumentName</value>
+  </data>
+  <data name="DOCUMENTS_NAME" xml:space="preserve">
+    <value>Documents Name</value>
+  </data>
+  <data name="DOCUMENT_CAPTURING" xml:space="preserve">
+    <value>Document Capturing</value>
+  </data>
+  <data name="DOCUMENT_INDEX" xml:space="preserve">
+    <value>Document index</value>
+  </data>
+  <data name="DOCUMENT_IS_USING" xml:space="preserve">
+    <value>This PDF is used by one Template or more. Please delete the Templates or association first before you can delete this PDF.</value>
+  </data>
+  <data name="DOCUMENT_NAME" xml:space="preserve">
+    <value>Document Name</value>
+  </data>
+  <data name="DOCUMENT_TYPE" xml:space="preserve">
+    <value>Document Type</value>
+  </data>
+  <data name="DONE" xml:space="preserve">
+    <value>Done</value>
+  </data>
+  <data name="DONT_HAVE_ANY_TEMPLATE_ACTIVE_PLEASE_ENSURE_THE_CLASSIFICATION_TEMPLATE_EXIST_OR_NOT_ERROR" xml:space="preserve">
+    <value>Don't have any template active. Please, ensure that the Classification template exist or not error</value>
+  </data>
+  <data name="DONT_HAVE_ANY_TEMPLATE_MATCHING_PLEASE_RECHECK_THE_CLASSIFICATION_TEMPLATE" xml:space="preserve">
+    <value>Don't have any template matching. Please, recheck the Classification template</value>
+  </data>
+  <data name="DONT_HAVE_ANY_TEMPLATE_MATCHING_WITH_THE_LANGUAGE_OF_THE_DOCUMENT_PLEASE_RECHECK_LANGUAGE_OF_THE_CLASSIFICATION_TEMPLATE" xml:space="preserve">
+    <value>Don't have any template matching with the language of the document. Please, recheck language of the Classification template</value>
+  </data>
+  <data name="DOWNLOAD" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="DOWNLOAD_FILE" xml:space="preserve">
+    <value>Download File</value>
+  </data>
+  <data name="DOWNLOAD_MULTIPLE_FILE" xml:space="preserve">
+    <value>Download Multiple Templates</value>
+  </data>
+  <data name="DOWNLOAD_MULTI_NOT_SELECT" xml:space="preserve">
+    <value>Please Select Template</value>
+  </data>
+  <data name="DO_YOU_WANT_TO_DELETE" xml:space="preserve">
+    <value>Do you want to delete?</value>
+  </data>
+  <data name="DUPLCATE_KEY" xml:space="preserve">
+    <value>Duplicate Key</value>
+  </data>
+  <data name="DUPLICATE_DATA_MODEL" xml:space="preserve">
+    <value>Duplicate Data Model Name</value>
+  </data>
+  <data name="DUPLICATE_KEY" xml:space="preserve">
+    <value>Duplicate Key</value>
+  </data>
+  <data name="DUPLICATE_NAME_REGEX" xml:space="preserve">
+    <value>Duplicate Regular Expression Name</value>
+  </data>
+  <data name="DUPLICATE_PATTERN" xml:space="preserve">
+    <value>Duplicate Pattern</value>
+  </data>
+  <data name="DUPLICATE_REGULAR_EXPRESSION_NAME" xml:space="preserve">
+    <value>Duplicate Regular Expression Name</value>
+  </data>
+  <data name="DUPLICATE_SQL_QUERY" xml:space="preserve">
+    <value>Duplicate SQL Query</value>
+  </data>
+  <data name="DUPLICATE_TEMPLATE_NAME" xml:space="preserve">
+    <value>Duplicate Template Name</value>
+  </data>
+  <data name="EDIT" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="EDIT_BASE_CLASSIFICATION_TEMPLATE" xml:space="preserve">
+    <value>Edit Base Classification Template</value>
+  </data>
+  <data name="EDIT_BASE_EXTRACTION_TEMPLATE" xml:space="preserve">
+    <value>Edit Base Extraction Template</value>
+  </data>
+  <data name="EDIT_CLASSIFICATION_TEMPLATE" xml:space="preserve">
+    <value>Edit Classification Template</value>
+  </data>
+  <data name="EDIT_DATA_MODEL" xml:space="preserve">
+    <value>Edit Data Model</value>
+  </data>
+  <data name="EDIT_EXTRACTION_TEMPLATE" xml:space="preserve">
+    <value>Edit Extraction Template</value>
+  </data>
+  <data name="EDIT_REGULAR_EXPRESSION" xml:space="preserve">
+    <value>Edit regular expression</value>
+  </data>
+  <data name="EDIT_SQL_QUERY" xml:space="preserve">
+    <value>Edit SQL Query</value>
+  </data>
+  <data name="ENDS_WITH" xml:space="preserve">
+    <value>End with</value>
+  </data>
+  <data name="ERROR" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="ERROR_SAVE_TREE" xml:space="preserve">
+    <value>Error while save node tree</value>
+  </data>
+  <data name="ERROR_WHILE_DELETE_REGULAR_EXPRESSION" xml:space="preserve">
+    <value>Error While Delete Regular Expression</value>
+  </data>
+  <data name="ERROR_WHILE_DELETE_TEMPLATE" xml:space="preserve">
+    <value>Error While Delete Template</value>
+  </data>
+  <data name="ERROR_WHILE_EXPORT" xml:space="preserve">
+    <value>Error while export file</value>
+  </data>
+  <data name="EXCLUDE_PAGE" xml:space="preserve">
+    <value>Exclude Page</value>
+  </data>
+  <data name="EXPORT" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="EXTRACT" xml:space="preserve">
+    <value>Extraction</value>
+  </data>
+  <data name="EXTRACTION" xml:space="preserve">
+    <value>Extraction</value>
+  </data>
+  <data name="EXTRACTION_RULE" xml:space="preserve">
+    <value>Extraction Rule</value>
+  </data>
+  <data name="EXTRACTION_TEMPLATE" xml:space="preserve">
+    <value>Extraction Template</value>
+  </data>
+  <data name="EXTRACTION_TEMPLATE_NAME" xml:space="preserve">
+    <value>Extraction Template Name</value>
+  </data>
+  <data name="FAIL" xml:space="preserve">
+    <value>Fail</value>
+  </data>
+  <data name="FALSE" xml:space="preserve">
+    <value>false</value>
+  </data>
+  <data name="FIELD_SEARCH_DATA_SOURCE_ONLY_EXTENSIONS_XML" xml:space="preserve">
+    <value>Field 'Search Data Source' Only Extensions XML</value>
+  </data>
+  <data name="FILESIZE" xml:space="preserve">
+    <value>File Size</value>
+  </data>
+  <data name="FILE_NAME" xml:space="preserve">
+    <value>File Name</value>
+  </data>
+  <data name="FILE_PDF" xml:space="preserve">
+    <value>File Pdf (.pdf)</value>
+  </data>
+  <data name="FILTER_QR_CODE" xml:space="preserve">
+    <value>Filter Qr Code</value>
+  </data>
+  <data name="FIXEDCONTENT" xml:space="preserve">
+    <value>FixedContent</value>
+  </data>
+  <data name="FIXED_CONTENT_IS_REQUIRED" xml:space="preserve">
+    <value>Fixed Content is required</value>
+  </data>
+  <data name="FOLDER_NAME" xml:space="preserve">
+    <value>Folder name</value>
+  </data>
+  <data name="FOLDER_NAME_CANNOT_BE_EMPTY" xml:space="preserve">
+    <value>Folder name cannot be empty</value>
+  </data>
+  <data name="FORMAT_DATA_MODEL_INCORRECT" xml:space="preserve">
+    <value>Format Data Model InCorrect</value>
+  </data>
+  <data name="FORMAT_IMPORT_SQL_INCORRECT" xml:space="preserve">
+    <value>Format SQL Query InCorrect</value>
+  </data>
+  <data name="FORMAT_REGEX_INCORRECT" xml:space="preserve">
+    <value>Format Regular Expression InCorrect</value>
+  </data>
+  <data name="GENERATE" xml:space="preserve">
+    <value>Generate</value>
+  </data>
+  <data name="GUIDANCE_PATTERN_NAMING_CONST" xml:space="preserve">
+    <value>You can set the name for output file following: | {ID}: is the identity of classifiaction template. Which is auto increment | {Name}: Name of classfication template | {Document Name}: Name of orginal pdf file | {FixedContent}: Fixed Content is name or content which user want to identity by pressing the Enter key | {Date}: Date to process the document | {Timestamps}: Date and Time to process the document</value>
+  </data>
+  <data name="ID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="IMPORT" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="IMPORT_BY_FILE_FROM_COMPUTER" xml:space="preserve">
+    <value>Import By File From Computer</value>
+  </data>
+  <data name="IMPORT_BY_URL" xml:space="preserve">
+    <value>Import By URL</value>
+  </data>
+  <data name="IMPORT_DATA_SOURCE_FILE" xml:space="preserve">
+    <value>Import Data Source File</value>
+  </data>
+  <data name="IMPORT_DICTIONARY" xml:space="preserve">
+    <value>Import Dictionary</value>
+  </data>
+  <data name="IMPORT_FAIL" xml:space="preserve">
+    <value>Import Fail</value>
+  </data>
+  <data name="IMPORT_SUCCESS" xml:space="preserve">
+    <value>Import Success</value>
+  </data>
+  <data name="IMPORT_TEMPLATE" xml:space="preserve">
+    <value>Import Template</value>
+  </data>
+  <data name="IMPROVE" xml:space="preserve">
+    <value>Content Improvement</value>
+  </data>
+  <data name="INCLUDE_PAGE" xml:space="preserve">
+    <value>Include Page</value>
+  </data>
+  <data name="INFORMATION_GENERAL" xml:space="preserve">
+    <value>Information General</value>
+  </data>
+  <data name="INFORMATION_GENERAL_CLASSIFICATION" xml:space="preserve">
+    <value>Information General Classification</value>
+  </data>
+  <data name="INFORMATION_GENERAL_EXTRACTION" xml:space="preserve">
+    <value>Information General Extraction</value>
+  </data>
+  <data name="INFORMATION_IMPORT_TEMPLATE" xml:space="preserve">
+    <value>Information Import Template</value>
+  </data>
+  <data name="INPUT_FIXED_CONTENT" xml:space="preserve">
+    <value>Input Fixed Content</value>
+  </data>
+  <data name="INVALID_EXTENSION_FILE" xml:space="preserve">
+    <value>Invalid Extension File</value>
+  </data>
+  <data name="IS_REQUIRED" xml:space="preserve">
+    <value>Is required</value>
+  </data>
+  <data name="ITEM_WAS_NOT_MOVED" xml:space="preserve">
+    <value>Item was not moved</value>
+  </data>
+  <data name="KEY" xml:space="preserve">
+    <value>Key</value>
+  </data>
+  <data name="LABEL" xml:space="preserve">
+    <value>Label</value>
+  </data>
+  <data name="LABEL_AND_CONTENT_BY_POSITION" xml:space="preserve">
+    <value>Content By Label</value>
+  </data>
+  <data name="LABEL_AND_REGULAR_EXPRESSION_BY_POSITION" xml:space="preserve">
+    <value>Regex By Label</value>
+  </data>
+  <data name="LANGUAGE" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="LANGUAGE_IS_REQUIRED" xml:space="preserve">
+    <value>Language is Required</value>
+  </data>
+  <data name="LEFT" xml:space="preserve">
+    <value>Left</value>
+  </data>
+  <data name="LIST_REGION" xml:space="preserve">
+    <value>List Region</value>
+  </data>
+  <data name="LOADING" xml:space="preserve">
+    <value>Loading</value>
+  </data>
+  <data name="LOG_SYSTEM" xml:space="preserve">
+    <value>Log System</value>
+  </data>
+  <data name="MANAGE_BASE_CLASSIFICATION" xml:space="preserve">
+    <value>Manage Base Classification</value>
+  </data>
+  <data name="MANAGE_BASE_EXTRACTION_TEMPLATE" xml:space="preserve">
+    <value>Manage Base Extraction Template</value>
+  </data>
+  <data name="MANAGE_CLASSIFICATION_TEMPLATE" xml:space="preserve">
+    <value>Manage Classification Template</value>
+  </data>
+  <data name="MANAGE_DATA_MODEL" xml:space="preserve">
+    <value>Manage Data Model</value>
+  </data>
+  <data name="MANAGE_DICTIONARY" xml:space="preserve">
+    <value>Manage Dictionary</value>
+  </data>
+  <data name="MANAGE_DOCUMENTS" xml:space="preserve">
+    <value>Manage Documents</value>
+  </data>
+  <data name="MANAGE_EXTRACTION_TEMPLATE" xml:space="preserve">
+    <value>Manage Extraction Template</value>
+  </data>
+  <data name="MANAGE_KEY_VALUE" xml:space="preserve">
+    <value>Manage Key Value</value>
+  </data>
+  <data name="MANAGE_LOGS" xml:space="preserve">
+    <value>Manage Logs</value>
+  </data>
+  <data name="MANAGE_OCR" xml:space="preserve">
+    <value>Manage OCR</value>
+  </data>
+  <data name="MANAGE_REGULAR_EXPRESSION" xml:space="preserve">
+    <value>Manage Regular Expression</value>
+  </data>
+  <data name="MANAGE_RULES" xml:space="preserve">
+    <value>Manage Rules</value>
+  </data>
+  <data name="MANAGE_RULES_CLASSIFICATION" xml:space="preserve">
+    <value>Manage Rules Classification</value>
+  </data>
+  <data name="MANAGE_RULE_EXTRACTION" xml:space="preserve">
+    <value>Manage Rule Extraction</value>
+  </data>
+  <data name="MANAGE_SEARCH_DATA_SOURCE" xml:space="preserve">
+    <value>Manage Search Data Source File</value>
+  </data>
+  <data name="MANAGE_SQL_QUERY" xml:space="preserve">
+    <value>Manage SQL Query</value>
+  </data>
+  <data name="MANAGE_TEMPLATE" xml:space="preserve">
+    <value>Classification</value>
+  </data>
+  <data name="MATCHED" xml:space="preserve">
+    <value>Matched</value>
+  </data>
+  <data name="MATCHES" xml:space="preserve">
+    <value>Matches</value>
+  </data>
+  <data name="MISSING_INFORMATION_PLEASE_FILL_IN_THE_INFORMATION" xml:space="preserve">
+    <value>Missing Information! Please, fill in the information</value>
+  </data>
+  <data name="MISSING_REQUIRED_INFORMATION" xml:space="preserve">
+    <value>Tab Information General has some fields missing</value>
+  </data>
+  <data name="MISS_PROPERTIES" xml:space="preserve">
+    <value>Please Fill Key and Default Value</value>
+  </data>
+  <data name="MODEL_INVALID" xml:space="preserve">
+    <value>Model invalid</value>
+  </data>
+  <data name="MODEL_NAME" xml:space="preserve">
+    <value>Model name</value>
+  </data>
+  <data name="MOVE" xml:space="preserve">
+    <value>Move</value>
+  </data>
+  <data name="MOVED_AN_ITEM_TO" xml:space="preserve">
+    <value>Moved an item to</value>
+  </data>
+  <data name="MOVE_ITEMS_TO" xml:space="preserve">
+    <value>Move items to</value>
+  </data>
+  <data name="MOVE_TO" xml:space="preserve">
+    <value>Move to</value>
+  </data>
+  <data name="NAME" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="NAME_IS_REQUIRED" xml:space="preserve">
+    <value>Name is required</value>
+  </data>
+  <data name="NEW_DIRECTORY" xml:space="preserve">
+    <value>New directory</value>
+  </data>
+  <data name="NEXT_PAGE" xml:space="preserve">
+    <value>Next Page</value>
+  </data>
+  <data name="NO" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="NONE" xml:space="preserve">
+    <value>none</value>
+  </data>
+  <data name="NONMATCHES" xml:space="preserve">
+    <value>NonMatches</value>
+  </data>
+  <data name="NOTIFY_CAN_NOT_RENAME_FILE" xml:space="preserve">
+    <value>You can't rename file, you only rename with folder</value>
+  </data>
+  <data name="NOTIFY_DELETE_ROOT_FOLDER" xml:space="preserve">
+    <value>You can't delete root folder , you only delete with normal folder</value>
+  </data>
+  <data name="NOTIFY_ONLY_DELETE_FOLDER" xml:space="preserve">
+    <value>You can't delete file, you only delete with folder</value>
+  </data>
+  <data name="NOTIFY_RENAME_ROOT_FOLDER" xml:space="preserve">
+    <value>You can't rename root folder , you only rename with normal folder</value>
+  </data>
+  <data name="NOTIFY_SAVE_REGION" xml:space="preserve">
+    <value>Can not save region has No-Text</value>
+  </data>
+  <data name="NOTIFY_ZOOM" xml:space="preserve">
+    <value>Can't Zoom! in the Crop Mode</value>
+  </data>
+  <data name="NOT_MATCH" xml:space="preserve">
+    <value>Not Match</value>
+  </data>
+  <data name="NOT_PROCESS_YET" xml:space="preserve">
+    <value>Not process yet</value>
+  </data>
+  <data name="NOT_SUPPORT_TEMPLATE_OCR_LARGE_FILE" xml:space="preserve">
+    <value>We do not support a large file with pages creater than 5.</value>
+  </data>
+  <data name="NO_" xml:space="preserve">
+    <value>No.</value>
+  </data>
+  <data name="NO_DATA" xml:space="preserve">
+    <value>No data</value>
+  </data>
+  <data name="NO_DATA_DISPLAY" xml:space="preserve">
+    <value>No data to display</value>
+  </data>
+  <data name="OCR" xml:space="preserve">
+    <value>OCR</value>
+  </data>
+  <data name="OCR_TEMPLATE" xml:space="preserve">
+    <value>OCR Template</value>
+  </data>
+  <data name="OFF" xml:space="preserve">
+    <value>Off</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ON" xml:space="preserve">
+    <value>On</value>
+  </data>
+  <data name="ONE_OR_MORE_ERRORS_OCURRED" xml:space="preserve">
+    <value>One or more errors ocurred</value>
+  </data>
+  <data name="ONLY_CHOOSE_TEMPLATE_FILE_WITH_EXTENSION_JSON" xml:space="preserve">
+    <value>Only choose template file with extension json</value>
+  </data>
+  <data name="ONLY_EXTENSION_XML" xml:space="preserve">
+    <value>Select only file with extension xml</value>
+  </data>
+  <data name="ONLY_NUMBER" xml:space="preserve">
+    <value>only number</value>
+  </data>
+  <data name="OPTION_LABEL" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="OR_DROP_FILE_HERE" xml:space="preserve">
+    <value>or Drop File Here</value>
+  </data>
+  <data name="OR_DROP_TO_HERE" xml:space="preserve">
+    <value>or Drop To Here</value>
+  </data>
+  <data name="OUTPUT_FILE_NAMING_IS_REQUIRED" xml:space="preserve">
+    <value>Output File Naming is required</value>
+  </data>
+  <data name="OUTPUT_FILE_NAMING_RULE" xml:space="preserve">
+    <value>Output File Naming Rule</value>
+  </data>
+  <data name="OUTPUT_MODEL" xml:space="preserve">
+    <value>Output Model</value>
+  </data>
+  <data name="OUTPUT_MODEL_IS_REQUIRED" xml:space="preserve">
+    <value>Output Model is required</value>
+  </data>
+  <data name="PAGE" xml:space="preserve">
+    <value>Page</value>
+  </data>
+  <data name="PAGE_INDEX" xml:space="preserve">
+    <value>Page Index</value>
+  </data>
+  <data name="PATTERN" xml:space="preserve">
+    <value>Pattern</value>
+  </data>
+  <data name="PATTERN_IS_REQUIRED" xml:space="preserve">
+    <value>Pattern is required</value>
+  </data>
+  <data name="PLEASE_CHOOSE_EITHER_BASE_FILE_OR_CUSTOM_OR_BOTH" xml:space="preserve">
+    <value>Please choose either base file or custom or both</value>
+  </data>
+  <data name="PLEASE_FILL_DATA_SQL" xml:space="preserve">
+    <value>Please fill data SQL query</value>
+  </data>
+  <data name="PLEASE_SELECT_A_PDF_FORMAT_FILE" xml:space="preserve">
+    <value>Please select a pdf format file</value>
+  </data>
+  <data name="PLEASE_SELECT_FILE_TO_UPLOAD" xml:space="preserve">
+    <value>Please select file to upload!!</value>
+  </data>
+  <data name="POSITION" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="POSSIBILITY_TEXT" xml:space="preserve">
+    <value>Possibility Text</value>
+  </data>
+  <data name="PREVIOUS_PAGE" xml:space="preserve">
+    <value>Previous Page</value>
+  </data>
+  <data name="PROCESSED" xml:space="preserve">
+    <value>Processed</value>
+  </data>
+  <data name="PROCESSING_OR_NOT_PROCESS_YET" xml:space="preserve">
+    <value>Processing or not process yet</value>
+  </data>
+  <data name="PROGRESS" xml:space="preserve">
+    <value>Progress</value>
+  </data>
+  <data name="QR_BILL" xml:space="preserve">
+    <value>QR-Bill</value>
+  </data>
+  <data name="QR_CODE" xml:space="preserve">
+    <value>QR Code</value>
+  </data>
+  <data name="QR_CODE_BY_CONTENT" xml:space="preserve">
+    <value>QR Code By Content</value>
+  </data>
+  <data name="QR_CODE_BY_REGULAR_EXPRESSION" xml:space="preserve">
+    <value>QR Code By Regex</value>
+  </data>
+  <data name="QR_CODE_GENERATE" xml:space="preserve">
+    <value>QR-Code Generate</value>
+  </data>
+  <data name="QR_CODE_RELATIVE_WITH_LABEL" xml:space="preserve">
+    <value>QR Code By Position</value>
+  </data>
+  <data name="RATIO" xml:space="preserve">
+    <value>Ratio</value>
+  </data>
+  <data name="RATIO_MATCHING_OF_CLASSIFICATION_TEMPLATE" xml:space="preserve">
+    <value>Ratio Matching Of Classification Template</value>
+  </data>
+  <data name="READY_TO_UPLOAD" xml:space="preserve">
+    <value>Ready to upload</value>
+  </data>
+  <data name="RECENT_UPDATED" xml:space="preserve">
+    <value>Recent Updated</value>
+  </data>
+  <data name="REGEX" xml:space="preserve">
+    <value>Regex</value>
+  </data>
+  <data name="REGIONID" xml:space="preserve">
+    <value>RegionId</value>
+  </data>
+  <data name="REGION_TEXT" xml:space="preserve">
+    <value>Region Text</value>
+  </data>
+  <data name="REGION_TEXT_IS_REQUIRED" xml:space="preserve">
+    <value>Region Text is required</value>
+  </data>
+  <data name="REGION_USING" xml:space="preserve">
+    <value>Region is using</value>
+  </data>
+  <data name="REGULAR_EXPRESSION" xml:space="preserve">
+    <value>Regular Expression</value>
+  </data>
+  <data name="REGULAR_EXPRESSION_BY_POSITION" xml:space="preserve">
+    <value>Regex By Region</value>
+  </data>
+  <data name="REGULAR_EXPRESSION_CLA" xml:space="preserve">
+    <value>Regex</value>
+  </data>
+  <data name="REGULAR_EXPRESSION_EX" xml:space="preserve">
+    <value>Regex</value>
+  </data>
+  <data name="REGULAR_EXPRESSION_NAME" xml:space="preserve">
+    <value>Regular Expression Name</value>
+  </data>
+  <data name="REGULAR_EXPRESSION_RELATIVE_WITH_LABEL" xml:space="preserve">
+    <value>Regex by Position</value>
+  </data>
+  <data name="REGULAR_EXPRESSION_USING" xml:space="preserve">
+    <value>Regular Expression is using</value>
+  </data>
+  <data name="RELATED_REGION" xml:space="preserve">
+    <value>Related Region</value>
+  </data>
+  <data name="RELATIVE" xml:space="preserve">
+    <value>Relative</value>
+  </data>
+  <data name="RELATIVE_IS_REQUIRED" xml:space="preserve">
+    <value>Relative is required</value>
+  </data>
+  <data name="RENAME_FOLDER" xml:space="preserve">
+    <value>Rename folder</value>
+  </data>
+  <data name="RERUN" xml:space="preserve">
+    <value>Rerun</value>
+  </data>
+  <data name="RESET" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="RESET_ZOOM" xml:space="preserve">
+    <value>Reset Zoom</value>
+  </data>
+  <data name="RESULTS_EXTRACTION" xml:space="preserve">
+    <value>Results Extraction</value>
+  </data>
+  <data name="RESULTS_TESTING" xml:space="preserve">
+    <value>Results Testing</value>
+  </data>
+  <data name="RIGHT" xml:space="preserve">
+    <value>Right</value>
+  </data>
+  <data name="RULE" xml:space="preserve">
+    <value>Rule</value>
+  </data>
+  <data name="RULEID" xml:space="preserve">
+    <value>RuleId</value>
+  </data>
+  <data name="RULE_TYPE" xml:space="preserve">
+    <value>Rule Type</value>
+  </data>
+  <data name="RULE_TYPE_IS_REQUIRED" xml:space="preserve">
+    <value>Rule Type is required</value>
+  </data>
+  <data name="RULE_VIEW_TABLE" xml:space="preserve">
+    <value>Rule View Table</value>
+  </data>
+  <data name="SAVE" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="SAVE_REGION" xml:space="preserve">
+    <value>Save Region</value>
+  </data>
+  <data name="SAVE_SUCCESS" xml:space="preserve">
+    <value>Save Success</value>
+  </data>
+  <data name="SAVE_TREE_SUCCESSFULLY" xml:space="preserve">
+    <value>save tree successfully</value>
+  </data>
+  <data name="SAVE_TREE_UNSUCCESSFULLY_YOU_NEED_REFRESH_PAGE_TO_UNDO_ACTIONS" xml:space="preserve">
+    <value>save tree unsuccessfully. You need refresh page to undo actions</value>
+  </data>
+  <data name="SEARCH_" xml:space="preserve">
+    <value>Search…</value>
+  </data>
+  <data name="SEARCH_OUTPUT_FILE" xml:space="preserve">
+    <value>Search Output File</value>
+  </data>
+  <data name="SELECT" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="SELECT_" xml:space="preserve">
+    <value>Select...</value>
+  </data>
+  <data name="SELECT_FILE" xml:space="preserve">
+    <value>Select File</value>
+  </data>
+  <data name="SELECT_ONE_LINE" xml:space="preserve">
+    <value>Please Select One Line</value>
+  </data>
+  <data name="SELECT_PDF_FILE" xml:space="preserve">
+    <value>Select PDF File</value>
+  </data>
+  <data name="SIZE" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="SOUNDEX" xml:space="preserve">
+    <value>Soundex</value>
+  </data>
+  <data name="SQL_QUERY" xml:space="preserve">
+    <value>SQL Query</value>
+  </data>
+  <data name="SQL_QUERY_IS_REQUIRED" xml:space="preserve">
+    <value>SQL Query is required</value>
+  </data>
+  <data name="SQL_QUERY_USING" xml:space="preserve">
+    <value>Sql Query Using</value>
+  </data>
+  <data name="STARTS_WITH" xml:space="preserve">
+    <value>Start with</value>
+  </data>
+  <data name="STATUS" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="SUCCESS" xml:space="preserve">
+    <value>Success</value>
+  </data>
+  <data name="SYSTEM" xml:space="preserve">
+    <value>System</value>
+  </data>
+  <data name="TAGS" xml:space="preserve">
+    <value>Tags</value>
+  </data>
+  <data name="TAGS_IS_REQUIRED" xml:space="preserve">
+    <value>Tags is required</value>
+  </data>
+  <data name="TAG_IS_REQUIRED" xml:space="preserve">
+    <value>Tag is required</value>
+  </data>
+  <data name="TEMPLATE" xml:space="preserve">
+    <value>Template</value>
+  </data>
+  <data name="TEMPLATE_GROUP" xml:space="preserve">
+    <value>Template Group</value>
+  </data>
+  <data name="TEMPLATE_NAME" xml:space="preserve">
+    <value>Template Name</value>
+  </data>
+  <data name="TEMPLATE_TYPE" xml:space="preserve">
+    <value>Template Type</value>
+  </data>
+  <data name="TEST" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="TEST_TEMPLATE" xml:space="preserve">
+    <value>Test Template</value>
+  </data>
+  <data name="THE_DELIVERY_CAN_NOT_COMPLETELY_SEND_DATA" xml:space="preserve">
+    <value>The delivery can not completely send data.</value>
+  </data>
+  <data name="THE_DIRECTORY_NAME_EXISTS" xml:space="preserve">
+    <value>The directory name existed</value>
+  </data>
+  <data name="THE_DOCUMENT_DOES_NOT_HAVE_QRCODE" xml:space="preserve">
+    <value>The document does not have QRCode</value>
+  </data>
+  <data name="THE_DOCUMENT_IS_NOT_MATCHED_WITH_THE_TEMPLATE" xml:space="preserve">
+    <value>The document is not matched with the template</value>
+  </data>
+  <data name="THE_FORMAT_OF_THIS_TEMPLATE_IS_INCORRECT" xml:space="preserve">
+    <value>The format of this template is incorrect</value>
+  </data>
+  <data name="THE_RESULTS_OF_EXTRACT_IS_EMPTY" xml:space="preserve">
+    <value>The results of extract is empty.</value>
+  </data>
+  <data name="THIS_ITEM_HAS_BEEN_PROCESSING_TRY_AGAIN_LATER" xml:space="preserve">
+    <value>This item has been processing, try again later</value>
+  </data>
+  <data name="THIS_TASK_HAVE_BEEN_ADD_TO_QUEUE" xml:space="preserve">
+    <value>This task have been add to queue.</value>
+  </data>
+  <data name="THUMBNAILS_VIEW" xml:space="preserve">
+    <value>Thumbnails view</value>
+  </data>
+  <data name="TIMESTAMPS" xml:space="preserve">
+    <value>Timestamps</value>
+  </data>
+  <data name="TOP" xml:space="preserve">
+    <value>Top</value>
+  </data>
+  <data name="TRUE" xml:space="preserve">
+    <value>true</value>
+  </data>
+  <data name="TRY_REQUEST_RE_RUN_ITEM" xml:space="preserve">
+    <value>Try request RE-RUN item.</value>
+  </data>
+  <data name="TRY_REQUEST_RE_SET_ITEM" xml:space="preserve">
+    <value>Try request RE-SET item.</value>
+  </data>
+  <data name="TYPE" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="TYPE_MANAGEMENT" xml:space="preserve">
+    <value>Type Management</value>
+  </data>
+  <data name="UNSPECIFIED_ERROR" xml:space="preserve">
+    <value>Unspecified error</value>
+  </data>
+  <data name="UNTITLED_DIRECTORY" xml:space="preserve">
+    <value>Untitled directory</value>
+  </data>
+  <data name="UPDATE" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="UPDATE_TEMPLATE_CLASSIFICATION_FAIL" xml:space="preserve">
+    <value>Update Classification Template Fail</value>
+  </data>
+  <data name="UPDATE_TEMPLATE_EXTRACTION_FAIL" xml:space="preserve">
+    <value>Update Extraction Template Fail</value>
+  </data>
+  <data name="UPLOAD_DOCUMENT" xml:space="preserve">
+    <value>Upload Document</value>
+  </data>
+  <data name="URL_IS_REQUIRED" xml:space="preserve">
+    <value>URL is required</value>
+  </data>
+  <data name="USER_CAN_INPUT_THE_SMALLEST_NUMBER_APPEARANCES_OF_MATCHED_IN_DATA_SOURCE_FILE_WHICH_EXISTS_IN_THE_DOCUMENT" xml:space="preserve">
+    <value>User can input the smallest number appearances of matched in Data Source file which exists in the document</value>
+  </data>
+  <data name="VALIDATE_DATASOURCE" xml:space="preserve">
+    <value>Validate DataSource</value>
+  </data>
+  <data name="VALIDATE_EXTENSION_DATASOURCE" xml:space="preserve">
+    <value>You only choose file with extension json, xml</value>
+  </data>
+  <data name="VALIDATE_FIXED_CONTENT_WITH_PATTERN" xml:space="preserve">
+    <value>Please, the fixed content must be different from the name of pattern naming.</value>
+  </data>
+  <data name="VALIDATE_PATTERN" xml:space="preserve">
+    <value>Validate Pattern</value>
+  </data>
+  <data name="VALUE" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="VERIFICATION_DATA_SOURCE" xml:space="preserve">
+    <value>Verification Data Source</value>
+  </data>
+  <data name="VERIFICATION_MINIMUM_MATCHED" xml:space="preserve">
+    <value>Verification Minimum Matched</value>
+  </data>
+  <data name="YES" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="YOU_ONLY_CHOOSE_FILE_WITH_EXTENSION_PDF" xml:space="preserve">
+    <value>You only choose file with extension pdf</value>
+  </data>
+  <data name="YOU_ONLY_CHOOSE_FILE_WITH_EXTENSION_TXT" xml:space="preserve">
+    <value>You only choose file with extension txt</value>
+  </data>
+  <data name="YOU_SHOULD_LET_FOLDER_EMPTY_BEFORE_DELETING" xml:space="preserve">
+    <value>You should let folder empty before deleting</value>
+  </data>
+  <data name="ZOOM_IN" xml:space="preserve">
+    <value>Zoom In</value>
+  </data>
+  <data name="ZOOM_OUT" xml:space="preserve">
+    <value>Zoom Out</value>
+  </data>
+  <data name="REGEX_MATCH" xml:space="preserve">
+    <value>Text is match pattern</value>
+  </data>
+  <data name="REGEX_NOT_MATCH" xml:space="preserve">
+    <value>Text isn't match pattern</value>
+  </data>
+  <data name="SCAN_DOCUMENT_ID" xml:space="preserve">
+    <value>ScanDocumentId</value>
+  </data>
+  <data name="FROM_TIME" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="OCR_PROCESSING_TIME_UTC" xml:space="preserve">
+    <value>OCR Processing Time (UTC)</value>
+  </data>
+  <data name="OUTPUT_DOCUMENT_NAME" xml:space="preserve">
+    <value>Output Document Name</value>
+  </data>
+  <data name="PROCESSING_STEP" xml:space="preserve">
+    <value>Processing Step</value>
+  </data>
+  <data name="TO_TIME" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="DETAIL" xml:space="preserve">
+    <value>Detail</value>
+  </data>
+  <data name="ADMIN" xml:space="preserve">
+    <value>Admin</value>
+  </data>
+  <data name="PROFILE" xml:space="preserve">
+    <value>Profile</value>
+  </data>
+  <data name="LINK" xml:space="preserve">
+    <value>Link</value>
+  </data>
+  <data name="UNLINK" xml:space="preserve">
+    <value>UnLink</value>
+  </data>
+  <data name="GO" xml:space="preserve">
+    <value>Go</value>
+  </data>
+  <data name="TENANT" xml:space="preserve">
+    <value>Tenant</value>
+  </data>
+  <data name="CONFIRM_LINK" xml:space="preserve">
+    <value>Do you want {0} with this tenant?</value>
+  </data>
+  <data name="INSTRUCTIONS_TEXT" xml:space="preserve">
+    <value>Select one or more Classification templates</value>
+  </data>
+  <data name="CONFIRM_BACK" xml:space="preserve">
+    <value>Do you want to back?</value>
+  </data>
+  <data name="OVERVIEW" xml:space="preserve">
+    <value>Overview</value>
+  </data>
+  <data name="MONITORING" xml:space="preserve">
+    <value>Monitoring</value>
+  </data>
+  <data name="MONITORING_DOCUMENTS" xml:space="preserve">
+    <value>Monitoring Documents</value>
+  </data>
+  <data name="SUMMARY" xml:space="preserve">
+    <value>Summary</value>
+  </data>
+  <data name="ITEMS_FAILED" xml:space="preserve">
+    <value>Items Failed</value>
+  </data>
+  <data name="ITEMS_DELIVERED" xml:space="preserve">
+    <value>Items Delivered</value>
+  </data>
+  <data name="START_DATE" xml:space="preserve">
+    <value>Start Date</value>
+  </data>
+  <data name="END_DATE" xml:space="preserve">
+    <value>End Date</value>
+  </data>
+  <data name="APPLY" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="DETAIL_VIEW" xml:space="preserve">
+    <value>Detail View</value>
+  </data>
+  <data name="USED_TEMPLATES" xml:space="preserve">
+    <value>Used Templates</value>
+  </data>
+  <data name="DELIVERY_SUCCESS" xml:space="preserve">
+    <value>Delivery Success</value>
+  </data>
+  <data name="DELIVERY_FAILED" xml:space="preserve">
+    <value>Delivery Failed</value>
+  </data>
+  <data name="YOU_CAN_INPUT_THE_NAME_HERE" xml:space="preserve">
+    <value>You can input the name here</value>
+  </data>
+  <data name="CLASSIFICATION_TEMPLATE_NAME" xml:space="preserve">
+    <value>Classification Template Name</value>
+  </data>
+  <data name="OOPS" xml:space="preserve">
+    <value>Oops</value>
+  </data>
+  <data name="SOMETHING_WENT_WRONG" xml:space="preserve">
+    <value>Something went wrong</value>
+  </data>
+  <data name="START_OVER_MESSAGE" xml:space="preserve">
+    <value>If this is first time you see this page, start over again</value>
+  </data>
+  <data name="CONTACT_ADMIN_MESSSAGE" xml:space="preserve">
+    <value>If this page get displayed again, contact system administrator or help desk</value>
+  </data>
+  <data name="GO_BACK_TO_START_PAGE" xml:space="preserve">
+    <value>Go back to Start Page</value>
+  </data>
+  <data name="DOWNLOAD_LAST_LOG_FILE" xml:space="preserve">
+    <value>Download last Log file</value>
+  </data>
+  <data name="SELECT_DOCUMENT_TYPE" xml:space="preserve">
+    <value>Select a document type</value>
+  </data>
+  <data name="WIHTOUT_TEMPLATE" xml:space="preserve">
+    <value>With No Template Found</value>
+  </data>
+  <data name="NO_TEMPLATE" xml:space="preserve">
+    <value>No template</value>
+  </data>
+  <data name="MANAGE_CONFIGURATION" xml:space="preserve">
+    <value>Manage Configuration</value>
+  </data>
+  <data name="TESTING" xml:space="preserve">
+    <value>Testing</value>
+  </data>
+  <data name="SUBMISSION_REQUEST" xml:space="preserve">
+    <value>Submission Request</value>
+  </data>
+  <data name="KEY_USING" xml:space="preserve">
+    <value>The Key is using</value>
+  </data>
+  <data name="DATE_OF_PROCESS" xml:space="preserve">
+    <value>Date of Process</value>
+  </data>
+  <data name="UNABLE_TO_DOWNLOAD_FILE" xml:space="preserve">
+    <value>Unable to download file</value>
+  </data>
+  <data name="EXPORT_CSV_ERROR" xml:space="preserve">
+    <value>Error! Can not export data to CSV</value>
+  </data>
+  <data name="ERROR_STATUS" xml:space="preserve">
+    <value>Failed</value>
+  </data>
+  <data name="NO_TEMPLATE_FOUND_STATUS" xml:space="preserve">
+    <value>No template found</value>
+  </data>
+  <data name="PROCESSING_STATUS" xml:space="preserve">
+    <value>Processing</value>
+  </data>
+  <data name="SUCCESS_STATUS" xml:space="preserve">
+    <value>Success</value>
+  </data>
+  <data name="NOTIFICATIONS" xml:space="preserve">
+    <value>Notifications</value>
+  </data>
+  <data name="THE_FILE_NOT_EXISTS" xml:space="preserve">
+    <value>The original file does not exist in the input folder</value>
+  </data>
+  <data name="PUBLISH_NOT_CHANGE" xml:space="preserve">
+    <value>No changes in templates for the new deployment</value>
+  </data>
+  <data name="PUBLISH_BEFORE_SAVE" xml:space="preserve">
+    <value>Please save before publish</value>
+  </data>
+  <data name="DUPLICATE_IMPORT_ID" xml:space="preserve">
+    <value>Duplicate id in the file import</value>
+  </data>
+  <data name="DUPLICATE_IMPORT_REGULAR_NAME" xml:space="preserve">
+    <value>Duplicate Regular name in the file import</value>
+  </data>
+  <data name="DUPLICATE_IMPORT_REGULAR_PATTERN" xml:space="preserve">
+    <value>Duplicate Regular pattern in the file import</value>
+  </data>
+  <data name="DUPLICATE_IMPORT_SQL_QUERY" xml:space="preserve">
+    <value>Duplicate SQL query in the file import</value>
+  </data>
+  <data name="THERE_IS_NO_NOTIFICATION" xml:space="preserve">
+    <value>There is no notification</value>
+  </data>
+  <data name="SEND_MESSAGE_FAIL" xml:space="preserve">
+    <value>Send message fail</value>
+  </data>
+  <data name="SEND_MESSAGE_SUCCESSFULLY" xml:space="preserve">
+    <value>Send message successfully</value>
+  </data>
+  <data name="ERROR_GET_TENANT" xml:space="preserve">
+    <value>Error While Get Tenant</value>
+  </data>
+  <data name="VALIDATE_USING_TENANT" xml:space="preserve">
+    <value>This template is using by tenant</value>
+  </data>
+  <data name="SERVICE_IS_WORKING" xml:space="preserve">
+    <value>This service is working..</value>
+  </data>
+  <data name="APPLICATION_STARTING" xml:space="preserve">
+    <value>Application starting</value>
+  </data>
+  <data name="APPLICATION_STARTING_FAIL" xml:space="preserve">
+    <value>Application start-up failed</value>
+  </data>
+  <data name="DOWNLOAD_LOG" xml:space="preserve">
+    <value>Download log</value>
+  </data>
+  <data name="DOWNLOAD_LOG_LASTEST" xml:space="preserve">
+    <value>Download Log Latest</value>
+  </data>
+  <data name="LOG_LINE_FORMAT" xml:space="preserve">
+    <value>{0} [{1}] {2}</value>
+  </data>
+  <data name="SINK_TO_FILE" xml:space="preserve">
+    <value>Sink to file</value>
+  </data>
+  <data name="TRANMITED_DIARTIS_LOG" xml:space="preserve">
+    <value>Tranmited to Diartis</value>
+  </data>
+  <data name="TRANMITED_DIARTIS_RESPONSE" xml:space="preserve">
+    <value>Tranmited to Diartis, ResponseCode={0}</value>
+  </data>
+  <data name="CLASSIFY_DOCUMENT" xml:space="preserve">
+    <value>ClassifyDocument.</value>
+  </data>
+  <data name="ERROR_CANT_GET_TEMPLATE" xml:space="preserve">
+    <value>ERROR! Can not get a template from {0}</value>
+  </data>
+  <data name="ERROR_WHILE_PROCESSING" xml:space="preserve">
+    <value>Error while processing</value>
+  </data>
+  <data name="FAIL_WHILE_PROCESSING" xml:space="preserve">
+    <value>Fail while processing</value>
+  </data>
+  <data name="MAIL_SERVICE" xml:space="preserve">
+    <value>MailService.</value>
+  </data>
+  <data name="MATCHED_TEMPLATES" xml:space="preserve">
+    <value>Matched Template:</value>
+  </data>
+  <data name="MATCHING_CLASSIFICATION_LOG" xml:space="preserve">
+    <value>{0} is Matching with template: {1} with probability: {2}</value>
+  </data>
+  <data name="NOT_AVAILBE" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="NO_DOCUMENT_FOUND" xml:space="preserve">
+    <value>No Template Found</value>
+  </data>
+  <data name="NO_MATCHING_TEMPLATE" xml:space="preserve">
+    <value>No Matching Template. Clean Up Rule Active. Match with default base class:</value>
+  </data>
+  <data name="PHYSICAL_PATH_OF_FILE" xml:space="preserve">
+    <value>PhysicalPathOfFile</value>
+  </data>
+  <data name="RATIODOT" xml:space="preserve">
+    <value>; ratio:</value>
+  </data>
+  <data name="SCAN_CATEGORY" xml:space="preserve">
+    <value>scanCategory =</value>
+  </data>
+  <data name="SENT_DATA_TO_CLASSIFICATION_RESPONSECODE" xml:space="preserve">
+    <value>Sent data to classification, ResponseCode={0}</value>
+  </data>
+  <data name="SENT_DATA_TO_EXTRACTION_RESPONSECODE" xml:space="preserve">
+    <value>Sent data to Extraction, ResponseCode={0}</value>
+  </data>
+  <data name="SENT_DATA_TO_NOTIFICATION" xml:space="preserve">
+    <value>Sent data to Notification API</value>
+  </data>
+  <data name="SENT_DATA_TO_STATISTICAL" xml:space="preserve">
+    <value>Sent data to Statistical API</value>
+  </data>
+  <data name="SUBJECT_EQL" xml:space="preserve">
+    <value>subject =</value>
+  </data>
+  <data name="TEMPLATE_WITH_HIGHEST_RATIO" xml:space="preserve">
+    <value>Template with highest ratio:</value>
+  </data>
+  <data name="UPDATE_DELETE_DOCUMENT_ID" xml:space="preserve">
+    <value>UpdateDeleteDocumentId</value>
+  </data>
+  <data name="UPDATE_EXTRACT_TEMPLATE_ID" xml:space="preserve">
+    <value>UpdateExtractTemplateID</value>
+  </data>
+  <data name="WHILE_DELETE_MULTI" xml:space="preserve">
+    <value>While Delete Multi Base Classification Template</value>
+  </data>
+  <data name="WHILE_EXPORT_FILE" xml:space="preserve">
+    <value>while exportFile.</value>
+  </data>
+  <data name="WHILE_UPDATE_MULTI_BASE_BY_DELETE" xml:space="preserve">
+    <value>While Update Multiple Base Template Classificaton By Deleted Base Template Extraction</value>
+  </data>
+  <data name="WHILE_UPDATE_TEMPLATE_AFTER_IMPORT" xml:space="preserve">
+    <value>while Update Template Classification After Import Regex</value>
+  </data>
+  <data name="ACTUAL_WHITE_PCT" xml:space="preserve">
+    <value>+ Page: {0} - Actual whitePercentageImage: {1}%</value>
+  </data>
+  <data name="CAN_NOT_START_FOLDERWATCHER" xml:space="preserve">
+    <value>{0} - Can NOT start because the tenant is NOT valid.</value>
+  </data>
+  <data name="CONTAIN_PAGE" xml:space="preserve">
+    <value>- Contains: {0} page.</value>
+  </data>
+  <data name="CONTAIN_PAGES" xml:space="preserve">
+    <value>- Contains: {0} pages.</value>
+  </data>
+  <data name="DC_NAME" xml:space="preserve">
+    <value>- Document's name: {0}</value>
+  </data>
+  <data name="DETECTING_FILE" xml:space="preserve">
+    <value>{0} - Detecting new files count/total: {1}/{2}</value>
+  </data>
+  <data name="FILE_NOT_EXISTS" xml:space="preserve">
+    <value>The file {0} is not exists.</value>
+  </data>
+  <data name="HORIZON" xml:space="preserve">
+    <value>==============================================================================</value>
+  </data>
+  <data name="INITIAL_FILE" xml:space="preserve">
+    <value>Initial File {0}</value>
+  </data>
+  <data name="MAKE_SURE_FOLDER_EXIST" xml:space="preserve">
+    <value>{0} - Please make sure the InputFolder [{1}] exists, then restart the service.</value>
+  </data>
+  <data name="NUMBER_REMOVED_PAGES" xml:space="preserve">
+    <value>- Number of removed page: {0}</value>
+  </data>
+  <data name="OBSERVE_CHANGES" xml:space="preserve">
+    <value>{0} - ObserveChanges</value>
+  </data>
+  <data name="REMOVE_PAGES_INDEX" xml:space="preserve">
+    <value>- Page index of removed page: {0}</value>
+  </data>
+  <data name="SETUP_FOLDER_WATCHING" xml:space="preserve">
+    <value>Please setup folders for watching changes</value>
+  </data>
+  <data name="STARTING_TO_GET_CHECK" xml:space="preserve">
+    <value>{0} - Starting to get and check the change of all files...</value>
+  </data>
+  <data name="STOP_FW" xml:space="preserve">
+    <value>{0} - Stopped.</value>
+  </data>
+  <data name="WATCHER_IS_RUNNING" xml:space="preserve">
+    <value>{0} - Can NOT start because the watcher is running...</value>
+  </data>
+  <data name="WM_COMPLETE_INITIALIZATION" xml:space="preserve">
+    <value>WatcherManager complete initialization, tenant count: {0}</value>
+  </data>
+  <data name="WM_INITIALIZATION" xml:space="preserve">
+    <value>WatcherManager initialization, tenant count: {0}</value>
+  </data>
+  <data name="WM_START" xml:space="preserve">
+    <value>WatcherManager start</value>
+  </data>
+  <data name="WM_STOP" xml:space="preserve">
+    <value>WatcherManager stop</value>
+  </data>
+  <data name="DATA_SOURCE_EX" xml:space="preserve">
+    <value>Data Source Extract:</value>
+  </data>
+  <data name="DELIVERY_WITHOUT_TEMPLATE" xml:space="preserve">
+    <value>This Classify template don't have Extraction ID. Deliver without template</value>
+  </data>
+  <data name="DOWNLOAD_SEARCH_DS" xml:space="preserve">
+    <value>DownloadSearchDataSource</value>
+  </data>
+  <data name="EX_DATA" xml:space="preserve">
+    <value>ExtractData</value>
+  </data>
+  <data name="FAIL_PROCESS_EX" xml:space="preserve">
+    <value>Fail Process Extraction</value>
+  </data>
+  <data name="MARCHED_DS_IS_EMPTY" xml:space="preserve">
+    <value>Matches data-source is empty, func searched content process stopping..</value>
+  </data>
+  <data name="NOT_DEFINED_FUNC_SEARCHED_CONTENT_STOP" xml:space="preserve">
+    <value>SearchedDataSourcePatterns is not defined, func searched content process stopping..</value>
+  </data>
+  <data name="NO_EXTRACTION" xml:space="preserve">
+    <value>No extraction templates.</value>
+  </data>
+  <data name="NO_EX_CREATED" xml:space="preserve">
+    <value>No Extraction Template Created.</value>
+  </data>
+  <data name="NULL_PATH_FUNC_SEARCHED_CONTENT_STOP" xml:space="preserve">
+    <value>FileExtractionPath is null or empty, func searched content process stopping...</value>
+  </data>
+  <data name="OCRTEXTBASE_NULL_OR_EMPTY" xml:space="preserve">
+    <value>OcrTextBase is null or empty, func searched content process stopping..</value>
+  </data>
+  <data name="PHYSICAL_PATH" xml:space="preserve">
+    <value>PhysicalPath</value>
+  </data>
+  <data name="PROCESS_SEARCHED_CONTENT" xml:space="preserve">
+    <value>ProcessSearchedContent</value>
+  </data>
+  <data name="PROCESS_SEARCH_CONTENT" xml:space="preserve">
+    <value>ProcessSearchedContent</value>
+  </data>
+  <data name="SENT_DATA_TO_DELIVERY_RESPONSECODE" xml:space="preserve">
+    <value>Sent data to Delivery, ResponseCode={0}</value>
+  </data>
+  <data name="UPDATE_DELETE_DC_ID" xml:space="preserve">
+    <value>UpdateDeleteDocumentId</value>
+  </data>
+  <data name="UPLOAD_SEARCHED_DS" xml:space="preserve">
+    <value>UploadSearchedDataSourcePatterns</value>
+  </data>
+  <data name="WHILE_DELETE_MULTI_SDS" xml:space="preserve">
+    <value>While Delete Multi Search Data Source</value>
+  </data>
+  <data name="WHILE_LOAD_XML_FILE_DS" xml:space="preserve">
+    <value>while LoadXmlFileDataSource</value>
+  </data>
+  <data name="WHILE_UPDATE_EX_AFTER_IMPORT_REGEX" xml:space="preserve">
+    <value>While Update Extraction Template After Import Regex</value>
+  </data>
+  <data name="WHILE_UPDATE_EX_AFTER_IMPORT_SQL" xml:space="preserve">
+    <value>While Update Extraction Template After Import Sql</value>
+  </data>
+  <data name="API_KEY" xml:space="preserve">
+    <value>?X-API-KEY={0}</value>
+  </data>
+  <data name="APP_DIRECTORY" xml:space="preserve">
+    <value>Application Directory: {0}</value>
+  </data>
+  <data name="APP_START_VER" xml:space="preserve">
+    <value>Application Starts. Version: {0}</value>
+  </data>
+  <data name="CANNOT_SEND_DATA" xml:space="preserve">
+    <value>Cannot send data to client</value>
+  </data>
+  <data name="CUSTOM_FILE_INFO_EX" xml:space="preserve">
+    <value>CustomFileInfo From Extract: {0}</value>
+  </data>
+  <data name="DATA_PUSH_KISS" xml:space="preserve">
+    <value>The data for push to &lt;Kiss&gt;, Data:</value>
+  </data>
+  <data name="DC_STATUS_LIST" xml:space="preserve">
+    <value>documentStatusList: {0}</value>
+  </data>
+  <data name="NOT_FOUND" xml:space="preserve">
+    <value>Not Found</value>
+  </data>
+  <data name="PUSH_DATA_TO_KLIBNET_NULL" xml:space="preserve">
+    <value>PushDataToKlibnetDB: ConnStrKlibnet is null or empty, push process stoped.</value>
+  </data>
+  <data name="PUSH_KISS" xml:space="preserve">
+    <value>PushDataToKISS</value>
+  </data>
+  <data name="PUSH_KLIBNET" xml:space="preserve">
+    <value>PushDataToKlibNet</value>
+  </data>
+  <data name="PUSH_KLIBNET_RESPONSE" xml:space="preserve">
+    <value>PushDataToKlibnetDB, ResponseCode={0}</value>
+  </data>
+  <data name="SCAN_AFTER" xml:space="preserve">
+    <value>SCAN AFTER: {0}</value>
+  </data>
+  <data name="SCAN_BEFORE" xml:space="preserve">
+    <value>SCAN BEFORE: {0}</value>
+  </data>
+  <data name="SERVICE_WORKING" xml:space="preserve">
+    <value>This service is working..</value>
+  </data>
+  <data name="WHILE_TRY_EXC_QUERY" xml:space="preserve">
+    <value>while try to execute Query=&lt;{0}&gt;</value>
+  </data>
+  <data name="WHILE_TRY_GET_DM" xml:space="preserve">
+    <value>while try to get data model.</value>
+  </data>
+  <data name="WHILE_TRY_PUSH_DATA" xml:space="preserve">
+    <value>while try to push data to &lt;Klibnet&gt;.</value>
+  </data>
+  <data name="WHILE_TRY_PUSH_DATA_KISS" xml:space="preserve">
+    <value>while try to push data to &lt;Kiss&gt;</value>
+  </data>
+  <data name="WHILE_TRY_UPDATE_KISS" xml:space="preserve">
+    <value>while try to update default values for &lt;Kiss&gt;</value>
+  </data>
+  <data name="ERROR_WHILE_DELETE_MULTI_REGEX" xml:space="preserve">
+    <value>Error While Delete Multi Regex</value>
+  </data>
+  <data name="ERROR_WHILE_DELETE_MULTI_SQL" xml:space="preserve">
+    <value>Error While Delete Multi Sql</value>
+  </data>
+  <data name="ERROR_WHILE_DOWNLOAD_DM" xml:space="preserve">
+    <value>Error While Download Data Model</value>
+  </data>
+  <data name="ERROR_WHILE_DOWNLOAD_MULTI_REGEX" xml:space="preserve">
+    <value>Error While Download Multi Regex</value>
+  </data>
+  <data name="ERROR_WHILE_DOWNLOAD_MULTI_SQL" xml:space="preserve">
+    <value>Error While Download Multi Sql</value>
+  </data>
+  <data name="ERROR_WHILE_IMPORT_RE" xml:space="preserve">
+    <value>Error While Import Regular Expression</value>
+  </data>
+  <data name="NOT_FOUND_DM" xml:space="preserve">
+    <value>Data Model Not Found</value>
+  </data>
+  <data name="NOT_FOUND_KEY" xml:space="preserve">
+    <value>Key Not Found</value>
+  </data>
+  <data name="TENANT_NOT_EXIST" xml:space="preserve">
+    <value>Tenant is not exist</value>
+  </data>
+  <data name="DATA" xml:space="preserve">
+    <value>Data:</value>
+  </data>
+  <data name="DATA_FILE_NULL" xml:space="preserve">
+    <value>Data File Is Null</value>
+  </data>
+  <data name="DISPOSING_SERVICE" xml:space="preserve">
+    <value>Disposing Service</value>
+  </data>
+  <data name="DSC_COUNTING" xml:space="preserve">
+    <value>DocumentStatusController-&gt;counting lastday</value>
+  </data>
+  <data name="DSC_COUNTING_DATE" xml:space="preserve">
+    <value>DocumentStatusController-&gt;counting bydate</value>
+  </data>
+  <data name="DSC_DAILY_DETAILS" xml:space="preserve">
+    <value>DocumentStatusController-&gt; daily-details</value>
+  </data>
+  <data name="DSC_DOWNLOAD" xml:space="preserve">
+    <value>DocumentStatusController-&gt;download</value>
+  </data>
+  <data name="DSC_GET_VIEW" xml:space="preserve">
+    <value>DocumentStatusController-&gt;getview/{0}</value>
+  </data>
+  <data name="DSC_INSERT_ERROR" xml:space="preserve">
+    <value>DocumentStatusController-&gt;InsertNew ERROR!</value>
+  </data>
+  <data name="DSC_SEARCHABLE" xml:space="preserve">
+    <value>Searchable_{0}</value>
+  </data>
+  <data name="DSC_UPDATE" xml:space="preserve">
+    <value>DocumentStatusController-&gt;UpdateState</value>
+  </data>
+  <data name="DSC_VIEW" xml:space="preserve">
+    <value>DocumentStatusController-&gt;getview</value>
+  </data>
+  <data name="ERROR_SAVE_FOR_TENANT" xml:space="preserve">
+    <value>Error save for Tenant</value>
+  </data>
+  <data name="ERROR_WHILE_PUBLISH" xml:space="preserve">
+    <value>Error While Publish</value>
+  </data>
+  <data name="EXCEPTION" xml:space="preserve">
+    <value>Exception: {0}</value>
+  </data>
+  <data name="FALL_ID" xml:space="preserve">
+    <value>FallId</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>{0}?fileName={1}</value>
+  </data>
+  <data name="FILE_LOCKED" xml:space="preserve">
+    <value>The file is locked: {0}</value>
+  </data>
+  <data name="INBOUND_CHANGE" xml:space="preserve">
+    <value>{0} - InBound Change Event Triggered by [{1}]</value>
+  </data>
+  <data name="KLIENTENS_ID" xml:space="preserve">
+    <value>KlientenstammId</value>
+  </data>
+  <data name="MESSAGE" xml:space="preserve">
+    <value>Message: {0}</value>
+  </data>
+  <data name="NOTIFICATION_ID" xml:space="preserve">
+    <value>NotificationID: {0}</value>
+  </data>
+  <data name="REMOVE_FILE_CAUSE_ERROR" xml:space="preserve">
+    <value>Removed file={0} cause data ERROR!</value>
+  </data>
+  <data name="RESET_ERROR" xml:space="preserve">
+    <value>ResetProcess error</value>
+  </data>
+  <data name="RESULT_SAVE_DATA_NOTIFICATION" xml:space="preserve">
+    <value>Result Save Data Notification:{0}</value>
+  </data>
+  <data name="RESULT_SAVE_DATA_STATISTIC" xml:space="preserve">
+    <value>Result Save Data Statistic: {0}</value>
+  </data>
+  <data name="SENT_PDF_NOT_SUCCESS" xml:space="preserve">
+    <value>Sent to PdfProcessingAPI Not Success, Status code: {0} {1}</value>
+  </data>
+  <data name="SENT_PDF_PROCESSING_ERROR" xml:space="preserve">
+    <value>Sent to PdfProcessingAPI ERROR!</value>
+  </data>
+  <data name="SERVICE_STARTING" xml:space="preserve">
+    <value>Service Starting</value>
+  </data>
+  <data name="SET_UP_FOR_WATCHING" xml:space="preserve">
+    <value>Please setup folders for watching changes</value>
+  </data>
+  <data name="STATISTIC_ID" xml:space="preserve">
+    <value>StatisticID: {0}</value>
+  </data>
+  <data name="STOP_SERVICE" xml:space="preserve">
+    <value>Stopping Service</value>
+  </data>
+  <data name="TEAMPLATE_CREATOR_API" xml:space="preserve">
+    <value>Template Creator Api</value>
+  </data>
+  <data name="WHILE_TRY_TO_PUT_FILE_TO_INPUT" xml:space="preserve">
+    <value>While try to put file to input folder</value>
+  </data>
+  <data name="UPDATE_DELETE_EX_TEMPLATE_ID" xml:space="preserve">
+    <value>UpdateDeleteExtractTemplateID</value>
+  </data>
+  <data name="FILE_PATH" xml:space="preserve">
+    <value>FilePath=</value>
+  </data>
+  <data name="FILE_PATH_NULL_EMPTY" xml:space="preserve">
+    <value>File path value does not null or empty</value>
+  </data>
+  <data name="INPUT_IMPROVING_FILE" xml:space="preserve">
+    <value>Input improving file: {0}, IsHighPriority: {1}</value>
+  </data>
+  <data name="INPUT_READING_FILE" xml:space="preserve">
+    <value>Input reading file: {0}, IsHighPriority: {1}</value>
+  </data>
+  <data name="INVALID_DS_ID" xml:space="preserve">
+    <value>Invalid DocumentStatus Id!</value>
+  </data>
+  <data name="NUMBER_PAGE" xml:space="preserve">
+    <value>Number of Page:</value>
+  </data>
+  <data name="NUMBER_QR" xml:space="preserve">
+    <value>Number of QR:</value>
+  </data>
+  <data name="OUTPUT_TIME" xml:space="preserve">
+    <value>Output File Name:</value>
+  </data>
+  <data name="PROCESS_TIME" xml:space="preserve">
+    <value>Process time(millisecond):</value>
+  </data>
+  <data name="PROCESS_TIME_MINUTE" xml:space="preserve">
+    <value>Process time(minute):</value>
+  </data>
+  <data name="RE_RUN_PROCESS" xml:space="preserve">
+    <value>ReRunProcess</value>
+  </data>
+  <data name="SENT_DATA_TO_IMPROVEMENT_RESPONSE_CODE" xml:space="preserve">
+    <value>Sent data to improvement, ResponseCode={0}</value>
+  </data>
+  <data name="SURE_CONTINUE" xml:space="preserve">
+    <value>Your PDF file has more than 5 pages. So the estimated processing time would be: {0} minutes. 
+                        &lt;br &gt; Are you sure to continue with the test?</value>
+  </data>
+  <data name="VALID_PDF_FILE" xml:space="preserve">
+    <value>The file is not a valid pdf file</value>
+  </data>
+  <data name="WHILE_IMPORT_DICTIONARY" xml:space="preserve">
+    <value>while import dictionary</value>
+  </data>
+  <data name="WHILE_SAVE_QR" xml:space="preserve">
+    <value>While Save Qr Code</value>
+  </data>
+  <data name="DICTIONARY_NOT_EXIST" xml:space="preserve">
+    <value>Dictionary file does not exist</value>
+  </data>
+  <data name="IMPROVE_WORD" xml:space="preserve">
+    <value>ImproveWordInDoc, Word={0}</value>
+  </data>
+  <data name="SENT_DATA_TO_CLASSIFICATION" xml:space="preserve">
+    <value>Sent data to classification, ResponseCode={0}</value>
+  </data>
+  <data name="ERROR_WHILE_BACKUP_TEMPLATE" xml:space="preserve">
+    <value>ERROR! While Backup Template</value>
+  </data>
+  <data name="PAGE_INDEX_OUT_OF_RANGE" xml:space="preserve">
+    <value>Page Index Out Of Range</value>
+  </data>
+  <data name="WHILE_BACKUP_TEMPLATE" xml:space="preserve">
+    <value>while backup template</value>
+  </data>
+  <data name="CAN_NOT_GET_MAIL_REQUEST" xml:space="preserve">
+    <value>Can not get mail request</value>
+  </data>
+  <data name="DPI_LOG_FORMAT" xml:space="preserve">
+    <value>File: {0}, actual dpi = {1}</value>
+  </data>
+  <data name="CLEAR_DC_INFO_ERROR" xml:space="preserve">
+    <value>ClearDocumentInfo ERROR!</value>
+  </data>
+  <data name="CLEAR_TEMPLATE_STATUS" xml:space="preserve">
+    <value>Clear templates status: isClassiFyDelete= {0}, isExtractDelete= {1}</value>
+  </data>
+  <data name="ERROR_GET_PATTERN" xml:space="preserve">
+    <value>ERROR! Get pattern name : {0}</value>
+  </data>
+  <data name="FILE_NAME_EQL" xml:space="preserve">
+    <value>{0}?fileName={1}</value>
+  </data>
+  <data name="GET_CLASS_ERROR" xml:space="preserve">
+    <value>GetClassTemplates Error</value>
+  </data>
+  <data name="GET_RESPONSE_FROM_CLASSIFICATION" xml:space="preserve">
+    <value>Get response from Classification API: {0} s</value>
+  </data>
+  <data name="GET_RESPONSE_FROM_EXTRACTION" xml:space="preserve">
+    <value>Get response from Extraction API: {0} s</value>
+  </data>
+  <data name="GET_RESPONSE_FROM_IMPROVING" xml:space="preserve">
+    <value>Get response from Impoving API: {0} s</value>
+  </data>
+  <data name="GET_RESPONSE_FROM_PROCESSING" xml:space="preserve">
+    <value>Get response from Processing API: {0} s</value>
+  </data>
+  <data name="SEARCHED" xml:space="preserve">
+    <value>Searched</value>
+  </data>
+  <data name="STARTING_TESTING_TEM" xml:space="preserve">
+    <value>Start testing template for: {0}</value>
+  </data>
+  <data name="TOTAL_TIME" xml:space="preserve">
+    <value>Total time is: {0} s</value>
+  </data>
+  <data name="PUBLISH" xml:space="preserve">
+    <value>Publish</value>
+  </data>
+  <data name="SELECTED_TEMPLATES" xml:space="preserve">
+    <value>Selected templates</value>
+  </data>
+  <data name="APPROVED" xml:space="preserve">
+    <value>Approved</value>
+  </data>
+  <data name="ATTACH_FILE" xml:space="preserve">
+    <value>Attach file</value>
+  </data>
+  <data name="DUPLICATE_KEY_EX" xml:space="preserve">
+    <value>The key already exists</value>
+  </data>
+  <data name="DUPLICATE_RULE" xml:space="preserve">
+    <value>The rule already exists</value>
+  </data>
+  <data name="DUPLICATE_RULE_TITLE" xml:space="preserve">
+    <value>Duplicate rule</value>
+  </data>
+  <data name="MESSAGE_" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="PENDING_APPROVAL" xml:space="preserve">
+    <value>Pending approval</value>
+  </data>
+  <data name="SCAN_CATEGORY_" xml:space="preserve">
+    <value>Scan category</value>
+  </data>
+  <data name="SEND" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="SEND_NOTIFICATION" xml:space="preserve">
+    <value>Send Notification</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="GET_OCR_FAIL" xml:space="preserve">
+    <value>Can not get ocr</value>
+  </data>
+  <data name="ERROR_TENANT_DOMAIN" xml:space="preserve">
+    <value>Something wrong with the tenant domain</value>
+  </data>
+  <data name="PUBLISH_SUCCESS" xml:space="preserve">
+    <value>Publish success</value>
+  </data>
+  <data name="REMOVED" xml:space="preserve">
+    <value>Removed</value>
+  </data>
+  <data name="END_READING_IN" xml:space="preserve">
+    <value>End reading file.. in {0} (minisec).</value>
+  </data>
+  <data name="OCR_FILENAME_PAGES" xml:space="preserve">
+    <value>OCR Processing: FileName={0}, PagesProcessed={1}, ProcessPagesTake={2}</value>
+  </data>
+  <data name="OCR_FILENAME_PAGESOF" xml:space="preserve">
+    <value>OCR Processing: FileName={0}, PagesProcessed=({1} of {2})</value>
+  </data>
+  <data name="READING_PDF" xml:space="preserve">
+    <value>Reading pdf</value>
+  </data>
+  <data name="SAVE_OCR_RESULT" xml:space="preserve">
+    <value>Save Ocr Result For EditorClient</value>
+  </data>
+  <data name="START_READING_FILE" xml:space="preserve">
+    <value>Start reading file..</value>
+  </data>
+  <data name="TIMEOUT_FILE_TOO_LARGE" xml:space="preserve">
+    <value>Processing: PageIndex={0}, cause got timeout, maybe file is too large or timeout was set too short.</value>
+  </data>
+  <data name="ARGUMENT_NOT_NULL" xml:space="preserve">
+    <value>Argument should be not null</value>
+  </data>
+  <data name="DUPLICATED_REGION" xml:space="preserve">
+    <value>Duplicated Region</value>
+  </data>
+  <data name="TEXT_NOT_EXIST" xml:space="preserve">
+    <value>Text doesn't exist in the document </value>
+  </data>
+  <data name="WARNING" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="CLASSIFY_FAILED" xml:space="preserve">
+    <value>Classify Failed</value>
+  </data>
+  <data name="CLASSIFY_SUCCESS" xml:space="preserve">
+    <value>Classify Success</value>
+  </data>
+  <data name="EXTRACT_FAILED" xml:space="preserve">
+    <value>Extract Failed</value>
+  </data>
+  <data name="EXTRACT_SUCCESS" xml:space="preserve">
+    <value>Extract Success</value>
+  </data>
+  <data name="OCR_FAILED" xml:space="preserve">
+    <value>OCR Failed</value>
+  </data>
+  <data name="OCR_SUCCESS" xml:space="preserve">
+    <value>OCR Success</value>
+  </data>
+  <data name="DELETE_BASE_EXTRACT_USED" xml:space="preserve">
+    <value>Extraction templates used in Classification template</value>
+  </data>
+  <data name="DUPLICATE_CLEAN_UP_RULE" xml:space="preserve">
+    <value>The CleanUpRule is using for {0} template</value>
+  </data>
+  <data name="FILENAME_CONTAINS_SPECIAL_CHARACTER" xml:space="preserve">
+    <value>File name contains special characters.</value>
+  </data>
+  <data name="MESSAGE_IS_REQUIRED" xml:space="preserve">
+    <value>Message is required.</value>
+  </data>
+  <data name="SEND_MESSAGE_TO_A_TENANT" xml:space="preserve">
+    <value>Send message to a tenant.</value>
+  </data>
+  <data name="TENANT_IS_REQUIRED" xml:space="preserve">
+    <value>Tenant is required.</value>
+  </data>
+  <data name="DUPLICATE_DOC_NAME" xml:space="preserve">
+    <value>Duplicate document name</value>
+  </data>
+  <data name="FILTER_TEMPLATES_BY_TENANT" xml:space="preserve">
+    <value>Filter templates by tenant</value>
+  </data>
+  <data name="PUBLISH_SELECT_ONE" xml:space="preserve">
+    <value>No Template Selected</value>
+  </data>
+  <data name="MULTI_TEMPLATE_MESSAGE" xml:space="preserve">
+    <value>The templates are using by </value>
+  </data>
+  <data name="SINGLE_TEMPLATE_MESSAGE" xml:space="preserve">
+    <value>The templates are using by</value>
+  </data>
+  <data name="POCESS_API_CALL" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="CLASSIFY_PENDING" xml:space="preserve">
+    <value>Classify Pending</value>
+  </data>
+  <data name="DELIVERY_PENDING" xml:space="preserve">
+    <value>Delivery Pending</value>
+  </data>
+  <data name="EXTRACT_PENDING" xml:space="preserve">
+    <value>Extract Pending</value>
+  </data>
+  <data name="OCR_PENDING" xml:space="preserve">
+    <value>OCR Pending</value>
+  </data>
+  <data name="URI_NULL" xml:space="preserve">
+    <value>URI string is null</value>
+  </data>
+  <data name="URI_INCORRECT_FORMAT" xml:space="preserve">
+    <value>URI string is empty or not correct format</value>
+  </data>
+  <data name="DUPLICATE_GROUP" xml:space="preserve">
+    <value>Duplicate Group</value>
+  </data>
+  <data name="GROUP_IS_IN_USE" xml:space="preserve">
+    <value>Group is in use</value>
+  </data>
+  <data name="MANAGE_GROUP_RULE" xml:space="preserve">
+    <value>Manage Group Rule</value>
+  </data>
+  <data name="GROUP_BASE_CLASSIFICATION" xml:space="preserve">
+    <value>Group Base Classification</value>
+  </data>
+  <data name="GROUP_BASE_EXTRACTION" xml:space="preserve">
+    <value>Group Base Extraction</value>
+  </data>
+  <data name="CLASSIFICATION_RATIO_NOT_PASS" xml:space="preserve">
+    <value>There is no classify template pass the required ratio. Template with highest ratio: </value>
+  </data>
+  <data name="ERROR_WHILE_CONFIGURE_SYMSPELL" xml:space="preserve">
+    <value>Error while config sym spell</value>
+  </data>
+  <data name="ERROR_WHILE_CREATE_CONFIGURATION" xml:space="preserve">
+    <value>Error while create configuration</value>
+  </data>
+  <data name="ERROR_WHILE_DELETE_CONFIGURATION" xml:space="preserve">
+    <value>Error while delete configuration</value>
+  </data>
+  <data name="ERROR_WHILE_GET_CONFIG" xml:space="preserve">
+    <value>Error while get config</value>
+  </data>
+  <data name="ERROR_WHILE_SEND_DATA_TO_CLASSIFICATION" xml:space="preserve">
+    <value>Error while send data to classification</value>
+  </data>
+  <data name="ERROR_WHILE_SEND_DATA_TO_NOTIFICATION" xml:space="preserve">
+    <value>Error while send data to notification</value>
+  </data>
+  <data name="ERROR_WHILE_UPDATE_CONFIGURATION" xml:space="preserve">
+    <value>Error while update configuration</value>
+  </data>
+  <data name="INVALID_DATE_QUERY" xml:space="preserve">
+    <value>The start date must to earlier or equal to the end date</value>
+  </data>
+  <data name="MISSING_MODULE_NAME" xml:space="preserve">
+    <value>Select at least one module name</value>
+  </data>
+  <data name="MODULE_NAME" xml:space="preserve">
+    <value>Module name</value>
+  </data>
+  <data name="SENT_DATA_TO_STATISTICAL_RESPONSE_CODE" xml:space="preserve">
+    <value>Sent data to statistical ,ResponseCode={0}</value>
+  </data>
+  <data name="SENT_DATA_TO_NOTIFICATION_RESPONSE_CODE" xml:space="preserve">
+    <value>Sent data to Notificaiton, ResponseCode={0}</value>
+  </data>
+  <data name="ADD_COMMENT" xml:space="preserve">
+    <value>Add Comment</value>
+  </data>
+  <data name="COMMENT" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="LAST_UPDATE" xml:space="preserve">
+    <value>Last Update</value>
+  </data>
+  <data name="SAVE_ERROR" xml:space="preserve">
+    <value>Save error</value>
+  </data>
+  <data name="LOG_NOT_FOUND_TEMPLATE" xml:space="preserve">
+    <value>File path: {0} is not match any template</value>
+  </data>
+  <data name="START_EXTRACT_DATA" xml:space="preserve">
+    <value>START TO EXTRACT DATA: {0}</value>
+  </data>
+  <data name="EDIT_GROUP_BASE_CLASSIFICATION" xml:space="preserve">
+    <value>Edit Group Base Classification</value>
+  </data>
+  <data name="EDIT_GROUP_BASE_EXTRACTION" xml:space="preserve">
+    <value>Edit Group Base Extraction</value>
+  </data>
+  <data name="GROUPS" xml:space="preserve">
+    <value>Groups</value>
+  </data>
+  <data name="MANAGE_GROUP_BASE_CLASSIFICATION" xml:space="preserve">
+    <value>Manage Group Base Classification</value>
+  </data>
+  <data name="MANAGE_GROUP_BASE_EXTRACTION" xml:space="preserve">
+    <value>Manage Group Base Extraction</value>
+  </data>
+  <data name="THE_END_DATE_IS_REQUIRED" xml:space="preserve">
+    <value>The end date is required</value>
+  </data>
+  <data name="THE_START_DATE_IS_REQUIRED" xml:space="preserve">
+    <value>The start date is required</value>
+  </data>
+  <data name="SELECT_A_VALUE" xml:space="preserve">
+    <value>Select a value...</value>
+  </data>
+  <data name="SEND_DC_TO_TEMPLATEBUILDER" xml:space="preserve">
+    <value>Send document to Template Builder: </value>
+  </data>
+  <data name="DC_BAD_QUALITY_EMPTY" xml:space="preserve">
+    <value>Document empty or bad quality</value>
+  </data>
+  <data name="NOT_FOUND_MATCH" xml:space="preserve">
+    <value>Classify failed OR not match any templates</value>
+  </data>
+  <data name="RATIO_LESS" xml:space="preserve">
+    <value>Ratio less than threshold</value>
+  </data>
+  <data name="RULE_IS_NULL" xml:space="preserve">
+    <value>Invalid rule</value>
+  </data>
+  <data name="EXTRACT_RESULT" xml:space="preserve">
+    <value>ExtractResult</value>
+  </data>
+  <data name="CREATE_FILE" xml:space="preserve">
+    <value>Created File {0}</value>
+  </data>
+  <data name="DETECTED_NEW_FILE" xml:space="preserve">
+    <value>{0} - Detecting new files count/total: {1}/{2}</value>
+  </data>
+  <data name="FILE_IS_NOT_EXIST" xml:space="preserve">
+    <value>The file {0} is not exists.</value>
+  </data>
+  <data name="DELIVERY_UNSUCCESSFUL" xml:space="preserve">
+    <value>Delivery Unsuccessful</value>
+  </data>
+  <data name="FOLDER_WATCHER" xml:space="preserve">
+    <value>Folder watcher</value>
+  </data>
+  <data name="IMPROVEMENT" xml:space="preserve">
+    <value>Improvement</value>
+  </data>
+  <data name="LOGGING" xml:space="preserve">
+    <value>Logging</value>
+  </data>
+  <data name="SELECT_TENANT" xml:space="preserve">
+    <value>Select a tenant name !</value>
+  </data>
+  <data name="EXTRACT_MISSING" xml:space="preserve">
+    <value>Extract missing data in EsrZeile and QrRechnung.</value>
+  </data>
+  <data name="KLIENT_REQUIRED" xml:space="preserve">
+    <value>KlientId is required.</value>
+  </data>
+  <data name="ERROR_WHILE_SEND_DC" xml:space="preserve">
+    <value>Error while sending the document to Template Builder.</value>
+  </data>
+  <data name="DC_HAS_EMPTY" xml:space="preserve">
+    <value>The document has empty pages.</value>
+  </data>
+  <data name="EMPTY_DOCUMENT" xml:space="preserve">
+    <value>This is an empty document.</value>
+  </data>
+  <data name="SENT_DATA_TO_STATISTICAL_RESPONSE" xml:space="preserve">
+    <value>Sent data to statistical. Response = {0}</value>
+  </data>
+  <data name="GROUP_EXISTS_A_RULE" xml:space="preserve">
+    <value>Group exists the rule</value>
+  </data>
+  <data name="GROUP_EXISTS_MORE_RULE" xml:space="preserve">
+    <value>Group exists the rules</value>
+  </data>
+  <data name="SEND_DATA_FAIL" xml:space="preserve">
+    <value>Send data to {0} fail.</value>
+  </data>
+</root>
