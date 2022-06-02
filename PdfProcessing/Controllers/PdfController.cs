@@ -17,30 +17,18 @@ namespace PdfProcessing.Controllers
     public class PdfController : ControllerBase
     {
         IBus _bus;
-        IProcessPdfService _processPdfService;
-
-        public PdfController(IBus bus, IProcessPdfService processPdfService)
+        
+        public PdfController(IBus bus)
         {
             _bus = bus;
-            _processPdfService = processPdfService;
         }
 
         [HttpPost]
         [Route("queuefile")]
         public async Task<IActionResult> QueueFile([FromBody] ServiceMessageIn serviceMessageIn)
         {
-            Uri uri;
             Log.Information("Queue a file: {serviceMessageIn.InputFileAbsolutePath}, IsHighPriority: {IsHighPriority}", serviceMessageIn.InputFileAbsolutePath, serviceMessageIn.IsHighPriority);
-
-            if (serviceMessageIn.IsHighPriority)
-            {
-                uri = new Uri(Constants.HIGHQUEUE_URI_SEND);
-            }
-            else
-            {
-                uri = new Uri(Constants.LOWQUEUE_URI_SEND);
-            }
-
+            Uri uri = serviceMessageIn.IsHighPriority ? uri = new Uri(Constants.HIGHQUEUE_URI_SEND) : uri = new Uri(Constants.LOWQUEUE_URI_SEND);
             var endpoint = _bus.GetSendEndpoint(uri).Result;
             await endpoint.Send(serviceMessageIn);
             return Accepted();
