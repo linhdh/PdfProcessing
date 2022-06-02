@@ -2,10 +2,13 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using PdfProcessing.Entities;
+using PdfProcessing.Services;
+using Serilog;
 using System;
 using System.IO;
 using System.Net;
 using System.Net.Http;
+using System.Threading.Tasks;
 
 namespace PdfProcessing.Controllers
 {
@@ -14,74 +17,33 @@ namespace PdfProcessing.Controllers
     public class PdfController : ControllerBase
     {
         IBus _bus;
-        //IProcessPdfService _processPdfService;
-        AppSetting _config;
+        IProcessPdfService _processPdfService;
 
-        public PdfController(IBus bus, /*IProcessPdfService processPdfService,*/ AppSetting config)
+        public PdfController(IBus bus, IProcessPdfService processPdfService)
         {
             _bus = bus;
-            //_processPdfService = processPdfService;
-            _config = config;
+            _processPdfService = processPdfService;
         }
 
         [HttpPost]
         [Route("queuefile")]
-        public HttpResponseMessage QueueFile([FromBody] CustomFileInfo c)
+        public async Task<IActionResult> QueueFile([FromBody] ServiceMessageIn serviceMessageIn)
         {
-            /*HttpResponseMessage badRequestResponse = new HttpResponseMessage(HttpStatusCode.BadRequest);
-
-            var modelNotNull = Guard.NotNull(c, nameof(c));
-            if (!modelNotNull) return badRequestResponse;
-
-            var fileFullPathNotNull = Guard.StringNotNullOrEmpty(c.FileFullPath, nameof(c.FileFullPath));
-            if (!fileFullPathNotNull) return badRequestResponse;
-
-            var fileFullPathExist = Guard.Exist(c.FileFullPath, nameof(c.FileFullPath));
-            if (!fileFullPathExist) return badRequestResponse;*/
-
-            return ProcessFile(c);
-        }
-
-        private HttpResponseMessage ProcessFile(CustomFileInfo c)
-        {
-            var inputFile = new FileInfo(c.FileFullPath);
-            var fileName = Path.GetFileName(inputFile.FullName);
-            
             Uri uri;
-            ISendEndpoint endpoint;
-            HttpStatusCode httpStatus = HttpStatusCode.Accepted;
+            Log.Information("Queue a file: {serviceMessageIn.InputFileAbsolutePath}, IsHighPriority: {IsHighPriority}", serviceMessageIn.InputFileAbsolutePath, serviceMessageIn.IsHighPriority);
 
-            if (string.IsNullOrEmpty(c.FileFullPath))
+            if (serviceMessageIn.IsHighPriority)
             {
-                //return new HttpResponseMessage(
-                //         httpStatus =   HttpStatusCode.BadRequest, Helper.GetLanguageString(LanguageResource.LanguageResources, LangKeys.FILE_PATH_NULL_EMPTY));
-
-                httpStatus = HttpStatusCode.BadRequest;
-                return new HttpResponseMessage(httpStatus);
-            }
-
-            if (!System.IO.File.Exists(c.FileFullPath))
-            {
-                //throw new HttpResponseException(Request.CreateErrorResponse
-                //            (HttpStatusCode.NotFound, Helper.GetLanguageString(LanguageResource.LanguageResources, LangKeys.FILE_NOT_EXISTS)));
-
-                httpStatus = HttpStatusCode.NotFound;
-                return new HttpResponseMessage(httpStatus);
-            }
-
-            if (c.IsHighPriority)
-            {
-                uri = new Uri("queue:kloon_pdf_processing_high_queue");
+                uri = new Uri(Constants.HIGHQUEUE_URI_SEND);
             }
             else
             {
-                uri = new Uri("queue:kloon_pdf_processing_low_queue");
+                uri = new Uri(Constants.LOWQUEUE_URI_SEND);
             }
 
-            endpoint = _bus.GetSendEndpoint(uri).Result;
-            endpoint.Send<CustomFileInfo>(new { c.FileFullPath, c.IsHighPriority, CommandType = (int)CommandType.DocStatusInsert, c.InitialPath, c.DocumentId });
-
-            return new HttpResponseMessage(httpStatus);
+            var endpoint = _bus.GetSendEndpoint(uri).Result;
+            await endpoint.Send(serviceMessageIn);
+            return Accepted();
         }
     }
 }

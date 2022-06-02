@@ -24,5 +24,8 @@
         public const string APP_CHARACTER_TWO_DOT = "..";
 
         public const string PDF_EXTENSION_LOWERCASE = ".pdf";
+
+        public const string HIGHQUEUE_URI_SEND = "queue:pdf_processing_high_queue";
+        public const string LOWQUEUE_URI_SEND = "queue:pdf_processing_low_queue";
     }
 }
