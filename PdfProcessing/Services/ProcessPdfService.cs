@@ -9,6 +9,7 @@ using Serilog;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Net.Http;
@@ -85,12 +86,7 @@ namespace PdfProcessing.Services
         {
             var inputFile = new FileInfo(serviceMessageIn.InputFileAbsolutePath);
             var pdf = new PdfDocument(inputFile.FullName);
-            var queueOcrResults = GetOcrResult_V1(inputFile.Name, pdf);
-
-            if (queueOcrResults.Count <= 0)
-            {
-                return new List<Document>();
-            }
+            var queueOcrResults = GetOcrResultV1(inputFile.FullName);
 
             var listOcrResult = queueOcrResults.ToList().OrderBy(t => t.PageIndex).ToList();
             var lstGroups = _processDocument.GroupDocuments(listOcrResult);
@@ -128,89 +124,36 @@ namespace PdfProcessing.Services
             return documents;
         }
 
-        public OcrResult GetOcrResult_V1(string fileName, PdfDocument pdf)
+        public async Task<OcrResult> GetOcrResultV1(string fileName)
         {
             Log.Information("Get OCR result from file {fileName}", fileName);
-            var queueOcrResults = new BlockingCollection<CapturedOcr>();
+            var ocr = new IronTesseract();
+            ocr.Language = OcrLanguage.English;
+            ocr.AddSecondaryLanguage(OcrLanguage.German);
+            ocr.AddSecondaryLanguage(OcrLanguage.French);
+            ocr.AddSecondaryLanguage(OcrLanguage.Italian);
+            ocr.Configuration.ReadBarCodes = true;
+            ocr.MultiThreaded = true;
 
-            PdfDocument temp = pdf.CopyPage(0);
+            var watch0 = new Stopwatch();
+            watch0.Start();
+            OcrResult ocrResult = null;
 
-            for (int i = 1; i < pageCount; i++)
+            try
             {
-                if (i % GROUP_PAGE_PROCESS == 0)
+                using (var input = new OcrInput(fileName))
                 {
-                    docs.Add(Tuple.Create(i, temp));
-                    temp = pdf.CopyPage(i);
-                }
-                else
-                {
-                    temp = PdfDocument.Merge(temp, pdf.CopyPage(i));
-                }
-
-                if (i == pageCount - 1)
-                {
-                    docs.Add(Tuple.Create(i + 1, temp));
+                    ocrResult = await ocr.ReadAsync(input);
+                    ocrResult.SaveAsSearchablePdf(Path.GetFileNameWithoutExtension(fileName) + Guid.NewGuid() + ".pdf");
                 }
             }
-
-            if (pageCount == 1)
+            catch (Exception ex)
             {
-                docs.Add(Tuple.Create(1, temp));
+                Log.Error(ex, Resources.Resources.READING_PDF);
             }
-
-            GC.SuppressFinalize(temp);
-
-            var tasks = new List<Task>();
-
-            docs.ForEach(d =>
-            {
-                tasks.Add(Task.Run(async () =>
-                {
-                    try
-                    {
-                        Log.Information($"Theadid: {Thread.CurrentThread.ManagedThreadId}_{string.Format(Resource.OCR_FILENAME_PAGES, shortFileName, d.Item1, pageSizeConfig)}");
-
-                        using (var input = new OcrInput(d.Item2.Stream))
-                        {
-                            var result = await ocr.ReadAsync(input);
-                            result.SaveAsSearchablePdf(Path.GetFileNameWithoutExtension(fileName) + Guid.NewGuid() + ".pdf");
-
-                            for (int index = 0, pageLenght = d.Item2.PageCount; index < pageLenght; index++)
-                            {
-                                var barcode = result.Pages[index].Barcodes.FirstOrDefault();
-                                var qrType = barcode == null ? TypesQRCode.Null
-                                : (barcode.Value.Equals(_config.QRCodeKeeping, StringComparison.CurrentCultureIgnoreCase)
-                                ? TypesQRCode.Keeping : (barcode.Value.Equals(_config.QRCodeRemoving, StringComparison.CurrentCultureIgnoreCase)
-                                ? TypesQRCode.Removing : TypesQRCode.Null));
-
-                                var pageNumber = d.Item1 - d.Item2.PageCount + index + 1;
-
-                                queueOcrResults.Add(new CapturedOcr
-                                {
-                                    PageIndex = pageNumber,
-                                    Results = ProcessDocumentExt.ToLocalPage(result.Pages[(int)index], (int)pageNumber),
-                                    QRCodeType = qrType
-                                });
-                            };
-
-                            GC.SuppressFinalize(result);
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        Log.Error(ex, Resource.READING_PDF);
-                    }
-                }));
-            });
-
-            Task.WaitAll(tasks.ToArray());
-
-            queueOcrResults.CompleteAdding();
-
             watch0.Stop();
-            Log.Information(string.Format(Resource.END_READING_IN, watch0.ElapsedMilliseconds));
-
-            return queueOcrResults;
+            Log.Information(string.Format(Resources.Resources.END_READING_IN, watch0.ElapsedMilliseconds));
+            return ocrResult;
         }
     }
 }
